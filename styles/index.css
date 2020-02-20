@@ -1,6 +1,11 @@
+/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+/* purgecss end ignore */
+
 @tailwind utilities;
+
+/* purgecss start ignore */
 
 /* Landing */
 
@@ -48,3 +53,5 @@
     min-height: 12rem;
     max-height: 18rem;
 }
+
+/* purgecss end ignore */
