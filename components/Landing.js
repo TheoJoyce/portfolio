@@ -2,7 +2,7 @@
 export default function Landing() {
     return(
         <div>
-            <div className="h-screen bg-white bg-repeat" style={{ backgroundImage: "url(/dot-grid.png)" }}>
+            <div className="h-screen bg-white bg-repeat" style={{ backgroundImage: "url(https://res.cloudinary.com/theojoyce/image/upload/v1582232684/dot-grid.jpg)" }}>
                 <div className="text-center">
                     <div className="h-16"></div>
                     <img className="mx-auto rounded-full profile" src="/default-avatar.jpg"/>
