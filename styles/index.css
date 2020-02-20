@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Landing */
+
+.profile {
+    width: 20vh;
+    height: 20vh;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.react-color {
+    color: #61dafb;
+}
+
+.js-color {
+    color: #f9e462;
+}
+
+.express-color {
+    color: #63f76a;
+}
+
+.postgres-color {
+    color: #667ef2;
+}
+
+/* About Me */
+
+.clipped {
+    clip-path: polygon(0 0, 100% 5vw, 100% 100%, 0% 100%);
+    background: rgb(51,125,255);
+    background: linear-gradient(45deg, rgba(51,125,255,1) 0%, rgba(51,193,255,1) 100%);
+    margin-top: -45vh;
+}
+
+/* Contact */
+
+.contact-title {
+    font-size: 2rem;
+}
+
+.message-textarea {
+    min-height: 12rem;
+    max-height: 18rem;
+}
