@@ -31,6 +31,7 @@ export default class Index extends React.Component {
                     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5061ff"/>
                     <meta name="msapplication-TileColor" content="#5061ff"/>
                     <meta name="theme-color" content="#5061ff"></meta>
+                    <meta name="Description" content="Portfolio site for Theo Joyce, a passionate React web developer" />
                 </Head>
                 <Landing />
                 <AboutMe />
