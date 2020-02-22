@@ -16,6 +16,8 @@ export default class Index extends React.Component {
             window.GA_INITIALIZED = true
         }
         logPageView()
+
+        feather.replace();
     }
 
     render () {
@@ -23,7 +25,11 @@ export default class Index extends React.Component {
             <div>
                 <Head>
                     <title>Theo Joyce | React Web Dev</title>
-                    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu&display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+                    <link rel="preconnect" href="https://www.google-analytics.com"/>
+                    <link rel="preconnect" href="https://www.google.com"/>
+                    <link rel="preconnect" href="https://www.google.ca"/>
+                    <link rel="preconnect" href="https://stats.g.doubleclick.net"/>
                     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
                     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
                     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
@@ -36,6 +42,7 @@ export default class Index extends React.Component {
                 <Landing />
                 <AboutMe />
                 <Contact />
+                <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
             </div>
         )
     }
