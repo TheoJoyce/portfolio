@@ -106,7 +106,7 @@ class Contact extends Component {
                             <div className="flex justify-end w-full">
                                 { this.state.sending ?
                                     <button className="bg-black border-2 border-white py-2 px-6 rounded shadow">
-                                        <img src="/icons/loader.svg" className="loading-spinner"/>
+                                        <img src="/icons/loader.svg" className="loading-spinner" alt="Loading..."/>
                                     </button>
                                 :
                                     <button className="bg-white hover:bg-black hover:text-white border-2 border-white font-bold py-2 px-6 rounded shadow">
