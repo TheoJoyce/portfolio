@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, ReactHTMLElement, ChangeEvent, FormEvent } from 'react'
 
 class Contact extends Component {
     state = {
@@ -10,7 +10,7 @@ class Contact extends Component {
         "blankMessage": false
     }
 
-    onChange = e => {
+    onChange = (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) => {
         this.setState({ [e.target.name]: e.target.value });
     }
 
@@ -22,7 +22,7 @@ class Contact extends Component {
         });
     }
 
-    handleResponse = (status, m) => {
+    handleResponse = (status: number, m: string) => {
         if (status === 200) {
             this.setState({ 
                 emailSent: true, 
@@ -40,7 +40,7 @@ class Contact extends Component {
         }
     }
 
-    sendEmail = async e => {
+    sendEmail = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         await this.validateForm();
@@ -95,7 +95,7 @@ class Contact extends Component {
                                     className="shadow appearance-none border rounded w-full h-48 py-2 px-3 text-dark leading-tight focus:outline-none focus:shadow-outline message-textarea whitespace-prewrap" 
                                     id="message"
                                     name="message"
-                                    cols="10" 
+                                    cols={10}
                                     placeholder="Your message here..."
                                     value={this.state.message}
                                     onChange={this.onChange}
