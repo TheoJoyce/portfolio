@@ -9,6 +9,13 @@ import Contact from '../components/Contact'
 
 import { initGA, logPageView } from '../utils/analytics'
 
+declare global {
+    interface Window {
+        GA_INITIALIZED: any;
+    }
+}
+declare var feather: any;
+
 export default class Index extends React.Component {
     componentDidMount () {
         if (!window.GA_INITIALIZED) {

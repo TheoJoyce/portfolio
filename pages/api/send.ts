@@ -1,9 +1,10 @@
-const sgMail = require('@sendgrid/mail');
+import { NextApiResponse, NextApiRequest } from "next";
+import sgMail from '@sendgrid/mail';
 
-export default async function(req, res) {
+export default async function({ req, res }: { req: NextApiRequest; res: NextApiResponse; }) {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-    const { email, message } = req.body;
+    const { email, message }: any = req.body;
 
     console.log(`I got: ${email} and ${message}`);
 
