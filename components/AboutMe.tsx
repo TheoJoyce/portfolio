@@ -1,6 +1,6 @@
 export default function AboutMe() {
     return(
-        <div className="h-screen w-full clipped">
+        <div className="w-full clipped">
             <div className="p-24"/>
             <div className="bg-white shadow md:w-full md:max-w-screen-sm w-11/12 p-8 mx-auto rounded-lg">
                 <h1 className="text-center text-gray-dark text-3xl font-bold pb-4">👋</h1>
@@ -14,6 +14,30 @@ export default function AboutMe() {
             <div className="bg-alert shadow md:w-full md:max-w-screen-sm w-11/12 p-4 mx-auto rounded-lg">
                 <p className="text-white text-center font-semibold">My portfolio projects are currently under development</p>
             </div>
+            <div className="p-2" />
+            <div className="flex flex-row flex-wrap">
+                {[1,2,3].map((v, i) => {
+                    return (
+                    <div key={i} className="bg-white shadow w-11/12 md:w-1/4 md:max-w-screen-lg mx-auto rounded-lg my-4 mx-2 transition duration-100 ease-in-out transform md:hover:-translate-y-px">
+                        <div className="bg-gray-dark w-full rounded-lg rounded-b-none pf-img-ph"/>
+                        <div className="px-6 py-4">
+                        <h2 className="font-bold text-gray-darker text-xl mb-2">Portfolio Project #{v}</h2>
+                            <p className="text-gray-dark">
+                                This is a placeholder for my upcoming projects.
+                            </p>
+                        </div>
+                        <div className="flex justify-end px-6 py-4">
+                        <span className="inline-block opacity-50 cursor-not-allowed mr-4" >
+                                <i data-feather="link"/>
+                            </span>
+                            <span className="inline-block opacity-50 cursor-not-allowed" >
+                                <i data-feather="github"/>
+                            </span>
+                        </div>
+                    </div>)
+                })}
+            </div>
+            <div className="p-4" />
         </div>
     );
 }

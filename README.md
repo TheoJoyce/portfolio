@@ -1,4 +1,4 @@
-![TheoJoyce Portfolio Banner](https://i.imgur.com/Pc7ICjF.png)
+![TheoJoyce Portfolio Banner](https://i.imgur.com/ZdbZD8G.png)
 
 # My Portfolio
 
