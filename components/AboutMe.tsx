@@ -15,7 +15,7 @@ export default function AboutMe() {
                             <a className="inline-block mr-4" href={liveURL} target="_blank" rel="noopener" title="Live Project URL">
                                 <i data-feather="link"/>
                             </a>
-                            <a className="inline-block" href={githubURL} target="_blank" title="GitHub Project URL">
+                            <a className="inline-block" href={githubURL} target="_blank" rel="noopener" title="GitHub Project URL">
                                 <i data-feather="github"/>
                             </a>
                         </div>
