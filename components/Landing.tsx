@@ -10,12 +10,12 @@ export default function Landing() {
                     <h2 className="text-dark pb-4">Web Developer</h2>
                     <div className="flex shadow-md bg-white rounded h-12 w-32 mx-auto transition duration-100 ease-in-out transform md:hover:-translate-y-px">
                         <span className="flex-grow p-3">
-                            <a target="_blank" rel="noreferrer" href="https://github.com/TheoJoyce" title="Github">
+                            <a target="_blank" rel="noopener" href="https://github.com/TheoJoyce" title="Github">
                                 <i data-feather="github" className="mx-auto"/>
                             </a>
                         </span>
                         <span className="flex-grow p-3">
-                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/theojoyce/" title="LinkedIn">
+                            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/theojoyce/" title="LinkedIn">
                                 <i data-feather="linkedin" className="mx-auto linkedin-icon"/>
                             </a>
                         </span>
