@@ -33,6 +33,8 @@
 
 .pf-img-ph {
     height: 225px;
+    background-position: center;
+    background-size: cover;
 }
 
 /* Contact */
