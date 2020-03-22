@@ -5,7 +5,7 @@ export default function Landing() {
             <div className="h-screen bg-white bg-repeat" style={{ backgroundImage: "url(https://res.cloudinary.com/theojoyce/image/upload/v1582232684/dot-grid.jpg)" }}>
                 <div className="text-center">
                     <div className="h-16"></div>
-                    <img className="mx-auto rounded-full profile" src="https://res.cloudinary.com/theojoyce/image/upload/v1582380989/me.jpg" alt="Picture of me" />
+                    <img className="mx-auto rounded-full profile" src="https://res.cloudinary.com/theojoyce/image/upload/v1584910859/Memoji.jpg" alt="Picture of me" />
                     <h1 className="text-darker pt-4 name">Theo Joyce</h1>
                     <h2 className="text-dark pb-4">Web Developer</h2>
                     <div className="flex shadow-md bg-white rounded h-12 w-32 mx-auto transition duration-100 ease-in-out transform md:hover:-translate-y-px">
