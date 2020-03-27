@@ -28,7 +28,7 @@
     clip-path: polygon(0 0, 100% 5vw, 100% 100%, 0% 100%);
     background: rgb(51,125,255);
     background: linear-gradient(45deg, rgba(51,125,255,1) 0%, rgba(51,193,255,1) 100%);
-    margin-top: -45vh;
+    margin-top: -25vh;
 }
 
 .pf-img-ph {

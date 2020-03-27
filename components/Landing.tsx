@@ -20,6 +20,14 @@ export default function Landing() {
                             </a>
                         </span>
                     </div>
+                    <a 
+                        className="inline-block shadow-md bg-white border rounded my-4 py-2 px-6 mx-auto font-bold transition duration-100 ease-in-out transform md:hover:-translate-y-px"
+                        href="https://freelance.theojoyce.com"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Freelance
+                    </a>
                 </div>
             </div>
         </div>
