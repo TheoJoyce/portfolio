@@ -7,7 +7,11 @@ module.exports = {
         dark: '#2D3748',
         darker: '#1A202C'
       },
-      alert: '#d82137'
+      alert: '#d82137',
+      button: {
+        default: '#5061ff',
+        hover: '#4a60e5'
+      }
     },
     fontFamily: {
       sans: [
