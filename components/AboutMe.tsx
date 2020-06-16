@@ -35,12 +35,12 @@ export default function AboutMe() {
     }
 
     const projects = [
-        {
-            imageURL: "https://res.cloudinary.com/theojoyce/image/upload/v1584841728/AspenFinance_neqlqy.jpg",
-            title: "Aspen Finance",
-            description: "Savings and budgeting platform",
-            liveURL: "https://aspen.theojoyce.com/",
-            githubURL: "https://github.com/TheoJoyce/smart-credit"
+        /*{
+            imageURL: "",
+            title: "Project #1 TBD",
+            description: "TBD",
+            liveURL: "",
+            githubURL: ""
         },
         {
             imageURL: "",
@@ -55,7 +55,7 @@ export default function AboutMe() {
             description: "TBD",
             liveURL: "",
             githubURL: ""
-        }
+        }*/
     ];
 
     return(
