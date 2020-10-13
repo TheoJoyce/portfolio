@@ -68,7 +68,7 @@ export default function AboutMe() {
                     className="text-white mx-auto mt-4 rounded-full py-2 px-4 bg-button hover:bg-button-hover"
                     rel="noopener" 
                     target="_blank"
-                    href="https://res.cloudinary.com/theojoyce/image/upload/v1584914054/Theo_Joyce_Resume.pdf"
+                    href="https://res.cloudinary.com/theojoyce/image/upload/Theo%20Joyce's%20Resume.pdf"
                 >
                     <i data-feather="file-text" className="inline-block"/>
                     <span className="font-semibold align-text-top"> Resume</span>
