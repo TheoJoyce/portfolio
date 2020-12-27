@@ -55,7 +55,12 @@ a:focus,
 button:focus,
 div:focus {
     @apply outline-none ring-2 ring-accent ring-offset-4 ring-offset-card;
-    @variants dark {
+}
+
+@screen dark {
+    a:focus,
+    button:focus,
+    div:focus {
         @apply ring-offset-card-dark;
     }
 }

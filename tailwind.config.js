@@ -50,6 +50,9 @@ module.exports = {
                 '95vw': '95vw',
                 '840px': '840px',
             },
+            screens: {
+                dark: { raw: '(prefers-color-scheme: dark)' },
+            },
         },
     },
     variants: {
