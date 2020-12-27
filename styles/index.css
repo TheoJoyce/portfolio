@@ -4,198 +4,63 @@
 
 @tailwind utilities;
 
-/* TODO: Refactor CSS */
+@layer base {
+    /* Open Sans Font */
 
-.quick-transition {
-    @apply transition;
-    @apply duration-150;
-    @apply ease-in-out;
-}
-
-/* Open Sans Font */
-
-/* cyrillic-ext */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* Hero */
-
-@keyframes bounce {
-    0% {
-        top: 0px;
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Open Sans Regular'), local('OpenSans-Regular'),
+            url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
     }
-    25% {
-        top: 0px;
+    /* cyrillic */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Open Sans Regular'), local('OpenSans-Regular'),
+            url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
     }
-    50% {
-        top: 1rem;
+    /* latin-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Open Sans Regular'), local('OpenSans-Regular'),
+            url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F,
+            U+A720-A7FF;
     }
-    100% {
-        top: 0px;
+    /* latin */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Open Sans Regular'), local('OpenSans-Regular'),
+            url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+            U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 }
 
-.gg-chevron-down {
-    @apply relative;
-    animation-name: bounce;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
+a:focus,
+button:focus,
+div:focus {
+    @apply outline-none ring-2 ring-accent ring-offset-4 ring-offset-card;
 }
 
-.gg-chevron-down,
-.gg-chevron-down:after {
-    --chevron-size: 2.25rem;
-    width: var(--chevron-size);
-    height: var(--chevron-size);
-}
-
-.gg-chevron-down:after {
-    --chevron-border-size: 4px;
-    border-bottom: var(--chevron-border-size) solid;
-    border-right: var(--chevron-border-size) solid;
-}
-
-/* My Work */
-
-.work-card {
-    width: 95vw;
-}
-
-.proj-card {
-    width: 90vw;
-    max-width: 570px;
-}
-
-.proj-card-image {
-    height: 320px;
-}
-
-@screen md {
-    .proj-card-image {
-        height: 320px;
+@screen dark {
+    a:focus,
+    button:focus,
+    div:focus {
+        @apply ring-offset-card-dark;
     }
-
-    .work-card {
-        width: 98%;
-        max-width: 2000px;
-    }
-}
-
-/* About Me */
-
-.about-me-card {
-    max-width: 95vw;
-}
-
-@screen lg {
-    .about-me-card {
-        max-width: 840px;
-    }
-}
-
-/* Contact Me */
-
-.contact-card {
-    width: 640px;
-}
-
-.form-input-wrapper {
-    @apply px-3;
-    @apply mb-6;
-}
-
-.form-label {
-    @apply block;
-    @apply uppercase;
-    @apply text-gray-dark;
-    @apply font-bold;
-    @apply text-sm;
-    @apply tracking-wide;
-}
-
-.form-input {
-    @apply appearance-none;
-    @apply block;
-    @apply w-full;
-    @apply bg-white;
-    @apply text-gray-dark;
-    @apply shadow-sm;
-    @apply rounded-lg;
-    @apply border;
-    @apply border-card;
-    @apply py-3;
-    @apply px-4;
-
-    @apply quick-transition;
-}
-
-.form-input:focus {
-    @apply outline-none;
-    @apply border-white;
-    @apply shadow-lg;
-}
-
-.form-textarea {
-    @apply h-48;
-    resize: none;
-}
-
-.button {
-    @apply tracking-wide;
-    @apply font-bold;
-    @apply rounded-lg;
-    @apply shadow;
-    @apply px-6;
-    @apply py-3;
-
-    @apply quick-transition;
-    transition-duration: 50ms !important;
-}
-
-.button-white {
-    @apply border-2;
-    @apply border-card;
-    @apply bg-white;
-    @apply text-background;
-}
-
-.button-white:hover,
-.button-white:focus {
-    @apply outline-none;
-    @apply bg-card;
-    @apply text-black;
-    @apply shadow-lg;
 }
