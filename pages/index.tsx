@@ -23,7 +23,7 @@ const index = () => {
     }, [])
 
     return (
-        <div className="bg-background">
+        <div className="bg-background dark:bg-black">
             <Head>
                 <title>Theo Joyce | React Web Dev</title>
                 <link rel="preconnect" href="https://www.google-analytics.com" />

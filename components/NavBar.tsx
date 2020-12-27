@@ -7,7 +7,7 @@ const scrollDuration = 400
 const NavBar = () => {
     return (
         <div className="relative z-20 pb-24">
-            <header className="flex fixed items-center w-full h-24 bg-background shadow-nav">
+            <header className="flex fixed items-center w-full h-24 bg-background dark:bg-black shadow-nav dark:shadow-nav-dark">
                 <nav className="flex px-4 w-full" role="navigation">
                     <div className="flex items-center mx-auto md:m-0">
                         <div
