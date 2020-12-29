@@ -1,7 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
+
 import GitHub from './icons/GitHub'
 import LinkedIn from './icons/LinkedIn'
-import LazyImage from './LazyImage'
 import PillButton from './PillButton'
 
 const About = () => {
@@ -12,7 +13,15 @@ const About = () => {
                     <div className="flex flex-col md:flex-row max-w-95vw lg:max-w-840px bg-card dark:bg-card-dark rounded-lg shadow hover:shadow-md quick-transition p-8 -mt-24 text-center">
                         <div className="flex flex-grow flex-col">
                             <div className="w-64 h-64 rounded-full md:m-8 mb-2 overflow-hidden ml-auto mr-auto">
-                                <LazyImage imageURL="v1585433175/mypicture_rvdifg.jpg" width={256} height={256} />
+                                <Image
+                                    src="v1585433175/mypicture_rvdifg.jpg"
+                                    alt="Theo Joyce"
+                                    layout="fixed"
+                                    width={256}
+                                    height={256}
+                                    objectFit="cover"
+                                    loading="eager"
+                                />
                             </div>
                             <h2 className="text-gray-dark dark:text-white text-4xl md:text-2xl font-bold">
                                 Theo Joyce

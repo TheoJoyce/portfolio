@@ -13,6 +13,7 @@ const GitHub = ({ className = 'w-8', fill = 'currentColor' }: GitHubProps) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32.58 31.77"
         >
+            <title>GitHub</title>
             <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_1-2" data-name="Layer 1">
                     <path

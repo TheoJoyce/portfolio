@@ -3,7 +3,7 @@ import PortfolioCard from './PortfolioCard'
 
 const Work = () => {
     const placeholderCard = {
-        image: 'image.png',
+        image: '',
         title: 'Coming Soon',
         description: '',
         liveLink: '',

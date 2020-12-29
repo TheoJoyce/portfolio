@@ -51,6 +51,8 @@
     }
 }
 
+/* Ring used for tab navigation */
+
 a:focus,
 button:focus,
 div:focus {
@@ -63,4 +65,75 @@ div:focus {
     div:focus {
         @apply ring-offset-card-dark;
     }
+}
+
+/* css.gg Icons */
+
+.gg-link {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: rotate(-45deg) scale(var(--ggs, 1));
+    width: 8px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 4px;
+}
+
+.gg-link::after,
+.gg-link::before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 8px;
+    height: 10px;
+    border: 2px solid;
+    top: -4px;
+}
+
+.gg-link::before {
+    border-right: 0;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    left: -6px;
+}
+
+.gg-link::after {
+    border-left: 0;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    right: -6px;
+}
+
+@keyframes spinneralt {
+    0% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.gg-spinner-alt {
+    transform: scale(var(--ggs, 1));
+}
+
+.gg-spinner-alt,
+.gg-spinner-alt::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.gg-spinner-alt::before {
+    content: '';
+    position: absolute;
+    border-radius: 100px;
+    animation: spinneralt 1s cubic-bezier(0.6, 0, 0.4, 1) infinite;
+    border: 3px solid transparent;
+    border-top-color: currentColor;
 }
