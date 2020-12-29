@@ -4,15 +4,17 @@ import Image from 'next/image'
 type LazyImageType = {
     className?: string
     imageURL: string
+    alt: string
     width: number
     height: number
 }
 
-const LazyImage = ({ className = '', imageURL, width, height }: LazyImageType) => {
+const LazyImage = ({ className = '', imageURL, alt, width, height }: LazyImageType) => {
     return (
         <Image
             className={className}
             src={imageURL}
+            alt={alt}
             layout="fixed"
             width={width}
             height={height}
