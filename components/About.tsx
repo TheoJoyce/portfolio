@@ -8,7 +8,7 @@ import PillButton from './PillButton'
 const About = () => {
     return (
         <section id="about">
-            <div className="md:h-screen pt-32 md:pt-0">
+            <div className="pt-48">
                 <div className="flex h-full items-center justify-center">
                     <div className="flex flex-col md:flex-row max-w-95vw lg:max-w-840px bg-card dark:bg-card-dark rounded-lg shadow hover:shadow-md quick-transition p-8 -mt-24 text-center">
                         <div className="flex flex-grow flex-col">
