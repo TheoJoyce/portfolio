@@ -10,8 +10,8 @@ const Contact = () => {
     const [state, handleSubmit] = useForm('contact')
 
     return (
-        <section className="flex flex-col" id="contact">
-            <div className="flex pt-24 md:pt-0 pb-24">
+        <section id="contact" className="flex flex-col">
+            <div className="flex pt-24 md:pt-0 mb-32">
                 {state.succeeded ? (
                     <div className="flex flex-col w-full max-w-95vw md:max-w-screen-sm bg-card dark:bg-card-dark rounded-lg shadow mx-auto p-4 sm:p-8 quick-transition card-pop">
                         <h2 className="text-center text-gray-dark dark:text-white font-bold">
