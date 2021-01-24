@@ -13,9 +13,23 @@ const NavBar = () => {
     const { theme, setTheme } = useTheme()
     const mounted = useMounted()
 
+    const userPrefDarkMode = () => window.matchMedia('(prefers-color-scheme: dark)').matches
+
     const toggleTheme = () => {
-        setTheme(theme === 'dark' ? 'light' : 'dark')
+        let newTheme = 'dark'
+
+        if (theme === 'system') {
+            if (userPrefDarkMode()) {
+                newTheme = 'light'
+            }
+        } else if (theme === 'dark') {
+            newTheme = 'light'
+        }
+
+        setTheme(newTheme)
     }
+
+    const isDarkMode = () => theme === 'dark' || (theme === 'system' && userPrefDarkMode())
 
     return (
         <div className="relative z-20 pb-24">
@@ -39,7 +53,7 @@ const NavBar = () => {
                     </div>
                     <ul className="flex flex-grow items-center justify-end">
                         <li className="mr-4 cursor-pointer" onClick={toggleTheme}>
-                            {theme === 'dark' && mounted ? (
+                            {isDarkMode() && mounted ? (
                                 <Moon className="text-white w-8" />
                             ) : (
                                 <Sun className="text-white w-8" />
