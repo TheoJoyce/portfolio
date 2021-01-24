@@ -3,7 +3,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
     purge: ['./components/**/*.{ts,tsx}', './pages/**/*.{ts,tsx}'],
-    darkMode: 'media',
+    darkMode: 'class',
     theme: {
         colors: {
             white: '#FFFFFF',
@@ -49,9 +49,6 @@ module.exports = {
             maxWidth: {
                 '95vw': '95vw',
                 '840px': '840px',
-            },
-            screens: {
-                dark: { raw: '(prefers-color-scheme: dark)' },
             },
         },
     },

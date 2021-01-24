@@ -16,7 +16,7 @@ const PortfolioCard = ({ image, title, description, liveLink }: PortfolioCardPro
     return (
         <div className="mx-2 my-6">
             <div
-                className="flex flex-col rounded-lg shadow w-90vw max-w-lg hover:shadow-lg quick-transition card-pop transform-gpu hover:scale-102"
+                className="flex flex-col rounded-lg shadow w-90vw max-w-lg hover:shadow-lg quick-transition card-pop transform-gpu hover:scale-102 tab-focus dark:tab-focus-dark"
                 tabIndex={0}
             >
                 {!image ? (
