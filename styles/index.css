@@ -51,19 +51,15 @@
     }
 }
 
-/* Ring used for tab navigation */
+@layer utilities {
+    .tab-focus:focus {
+        @apply outline-none ring-2 ring-accent ring-offset-4 ring-offset-card;
+    }
 
-a:focus,
-button:focus,
-div:focus {
-    @apply outline-none ring-2 ring-accent ring-offset-4 ring-offset-card;
-}
-
-@screen dark {
-    a:focus,
-    button:focus,
-    div:focus {
-        @apply ring-offset-card-dark;
+    @variants dark {
+        .tab-focus-dark:focus {
+            @apply ring-offset-card-dark;
+        }
     }
 }
 
