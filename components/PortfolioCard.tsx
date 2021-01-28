@@ -49,7 +49,7 @@ const PortfolioCard = ({ image, title, description, liveLink }: PortfolioCardPro
                         )}
                         {!liveLink && titleElement}
                     </div>
-                    <p>{description}</p>
+                    <p className="dark:text-white">{description}</p>
                 </div>
             </div>
         </div>
