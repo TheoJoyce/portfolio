@@ -46,7 +46,7 @@ const About = () => {
                             <div className="flex justify-end mt-8 mx-auto md:mt-auto md:mx-0">
                                 <a
                                     className="flex"
-                                    href="https://res.cloudinary.com/theojoyce/image/upload/Theo%20Joyce's%20Resume.pdf"
+                                    href="https://res.cloudinary.com/theojoyce/image/upload/v1611854832/Theo%20Joyce%27s%20Resume.pdf"
                                     rel="noreferrer"
                                     target="_blank"
                                     tabIndex={-1}

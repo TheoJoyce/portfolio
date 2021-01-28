@@ -2,14 +2,14 @@ import React from 'react'
 import PortfolioCard from './PortfolioCard'
 
 const Work = () => {
-    const placeholderCard = {
-        image: '',
-        title: 'Coming Soon',
-        description: '',
-        liveLink: '',
+    const freelanceOne = {
+        image: 'v1607754158/ourkidschildcare.com__x4ntzf.png',
+        title: 'Our Kids Child Care',
+        description: 'A local daycare business',
+        liveLink: 'https://ourkidschildcare.com/',
     }
 
-    const portfolioCardsData = [placeholderCard, placeholderCard]
+    const portfolioCardsData = [freelanceOne]
 
     return (
         <section id="my-work" className="sm:mb-32 pt-48">
