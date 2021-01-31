@@ -9,7 +9,9 @@ const App = ({ Component, pageProps }: AppProps) => {
     return (
         <FormspreeProvider project="1519626967953964241">
             <ThemeProvider attribute="class" defaultTheme="system">
-                <Component {...pageProps} />
+                <React.StrictMode>
+                    <Component {...pageProps} />
+                </React.StrictMode>
             </ThemeProvider>
         </FormspreeProvider>
     )
