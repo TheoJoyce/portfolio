@@ -1261,7 +1261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formspree/react@npm:^2.2.3":
+"@formspree/react@npm:latest":
   version: 2.2.3
   resolution: "@formspree/react@npm:2.2.3"
   dependencies:
@@ -1501,7 +1501,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/jit@npm:^0.1.0":
+"@tailwindcss/jit@npm:latest":
   version: 0.1.18
   resolution: "@tailwindcss/jit@npm:0.1.18"
   dependencies:
@@ -1549,17 +1549,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:latest":
   version: 15.0.2
   resolution: "@types/node@npm:15.0.2"
   checksum: ea8dd741bf16ad3318cca505783b7c211a5c8bea49202f99ba88d2ce8a804e994e1fd1b575b994e434e8b8ead810da966d588ea112998f8fe8d95cd74c396f8a
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^14.14.35":
-  version: 14.14.44
-  resolution: "@types/node@npm:14.14.44"
-  checksum: 5c4db716325fc8a25b5b76b800acf0ff00c8fa1e7cfcb764fc79d79594939488cb9d2a756e188eb8e8a36da51e8e2be1ffe859be901b338779cb0aa12ad73b3a
   languageName: node
   linkType: hard
 
@@ -1586,7 +1579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.3":
+"@types/react@npm:*, @types/react@npm:latest":
   version: 17.0.5
   resolution: "@types/react@npm:17.0.5"
   dependencies:
@@ -1613,7 +1606,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.18.0":
+"@typescript-eslint/eslint-plugin@npm:latest":
   version: 4.22.1
   resolution: "@typescript-eslint/eslint-plugin@npm:4.22.1"
   dependencies:
@@ -1651,7 +1644,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.18.0":
+"@typescript-eslint/parser@npm:latest":
   version: 4.22.1
   resolution: "@typescript-eslint/parser@npm:4.22.1"
   dependencies:
@@ -2034,7 +2027,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.2.5":
+"autoprefixer@npm:latest":
   version: 10.2.5
   resolution: "autoprefixer@npm:10.2.5"
   dependencies:
@@ -3217,7 +3210,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.1.0":
+"eslint-config-prettier@npm:latest":
   version: 8.3.0
   resolution: "eslint-config-prettier@npm:8.3.0"
   peerDependencies:
@@ -3228,7 +3221,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.3.1":
+"eslint-plugin-prettier@npm:latest":
   version: 3.4.0
   resolution: "eslint-plugin-prettier@npm:3.4.0"
   dependencies:
@@ -3243,7 +3236,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.22.0":
+"eslint-plugin-react@npm:latest":
   version: 7.23.2
   resolution: "eslint-plugin-react@npm:7.23.2"
   dependencies:
@@ -3298,7 +3291,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.22.0":
+"eslint@npm:latest":
   version: 7.26.0
   resolution: "eslint@npm:7.26.0"
   dependencies:
@@ -5010,7 +5003,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"next-offline@npm:^5.0.3":
+"next-offline@npm:latest":
   version: 5.0.5
   resolution: "next-offline@npm:5.0.5"
   dependencies:
@@ -5024,18 +5017,18 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"next-themes@npm:0.0.12":
-  version: 0.0.12
-  resolution: "next-themes@npm:0.0.12"
+"next-themes@npm:latest":
+  version: 0.0.14
+  resolution: "next-themes@npm:0.0.14"
   peerDependencies:
     next: "*"
     react: "*"
     react-dom: "*"
-  checksum: a1a2621be7d5726a5676b5d3cfa1d70172163af89b1065b86de715cdee0b6be8158cf96f04564d572013f750458bd9d16f57584cc3f7a24e8cb2e333a5cab8d0
+  checksum: 34b8933ccd9bdac0dfa570e3522c5f9ab6c47e5e17c90628dfa01b4f4f5ea40d561a66c275aaef4e39547a0baca7a6b5bc789d564098f82cd8346eac5860d574
   languageName: node
   linkType: hard
 
-"next@npm:^10.0.9":
+"next@npm:latest":
   version: 10.2.0
   resolution: "next@npm:10.2.0"
   dependencies:
@@ -5599,30 +5592,30 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "portfolio@workspace:."
   dependencies:
-    "@formspree/react": ^2.2.3
-    "@tailwindcss/jit": ^0.1.0
-    "@types/node": ^14.14.35
-    "@types/react": ^17.0.3
+    "@formspree/react": latest
+    "@tailwindcss/jit": latest
+    "@types/node": latest
+    "@types/react": latest
     "@types/react-scroll": ^1.8.2
-    "@typescript-eslint/eslint-plugin": ^4.18.0
-    "@typescript-eslint/parser": ^4.18.0
-    autoprefixer: ^10.2.5
-    eslint: ^7.22.0
-    eslint-config-prettier: ^8.1.0
-    eslint-plugin-prettier: ^3.3.1
-    eslint-plugin-react: ^7.22.0
-    next: ^10.0.9
-    next-offline: ^5.0.3
-    next-themes: 0.0.12
-    postcss: ^8.2.8
+    "@typescript-eslint/eslint-plugin": latest
+    "@typescript-eslint/parser": latest
+    autoprefixer: latest
+    eslint: latest
+    eslint-config-prettier: latest
+    eslint-plugin-prettier: latest
+    eslint-plugin-react: latest
+    next: latest
+    next-offline: latest
+    next-themes: latest
+    postcss: latest
     prettier: ^2.2.1
     prop-types: ^15.7.2
-    react: ^17.0.1
-    react-dom: ^17.0.1
+    react: latest
+    react-dom: latest
     react-ga: ^3.3.0
     react-scroll: ^1.8.2
-    tailwindcss: ^2.0.3
-    typescript: ^4.2.3
+    tailwindcss: latest
+    typescript: latest
   languageName: unknown
   linkType: soft
 
@@ -5705,7 +5698,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:^8.2.8":
+"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:latest":
   version: 8.2.14
   resolution: "postcss@npm:8.2.14"
   dependencies:
@@ -5957,7 +5950,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.1":
+"react-dom@npm:latest":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -6007,7 +6000,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.1":
+"react@npm:latest":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
@@ -6947,7 +6940,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^2.0.3":
+"tailwindcss@npm:latest":
   version: 2.1.2
   resolution: "tailwindcss@npm:2.1.2"
   dependencies:
@@ -7184,7 +7177,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-typescript@^4.2.3:
+typescript@latest:
   version: 4.2.4
   resolution: "typescript@npm:4.2.4"
   bin:
@@ -7194,7 +7187,7 @@ typescript@^4.2.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.2.3#builtin<compat/typescript>":
+"typescript@patch:typescript@latest#builtin<compat/typescript>":
   version: 4.2.4
   resolution: "typescript@patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"
   bin:
