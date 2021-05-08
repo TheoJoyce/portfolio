@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@formspree/react", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:2.2.3"],
             ["@tailwindcss/jit", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.1.18"],
-            ["@types/node", "npm:14.14.44"],
+            ["@types/node", "npm:15.0.2"],
             ["@types/react", "npm:17.0.5"],
             ["@types/react-scroll", "npm:1.8.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:4.22.1"],
@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:7.23.2"],
             ["next", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:10.2.0"],
             ["next-offline", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:5.0.5"],
-            ["next-themes", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.0.12"],
+            ["next-themes", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.0.14"],
             ["postcss", "npm:8.2.14"],
             ["prettier", "npm:2.2.1"],
             ["prop-types", "npm:15.7.2"],
@@ -2580,13 +2580,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:14.14.44", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.44-607cb19845-5c4db71632.zip/node_modules/@types/node/",
-          "packageDependencies": [
-            ["@types/node", "npm:14.14.44"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:15.0.2", {
           "packageLocation": "./.yarn/cache/@types-node-npm-15.0.2-433fc3c944-ea8dd741bf.zip/node_modules/@types/node/",
           "packageDependencies": [
@@ -6756,17 +6749,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["next-themes", [
-        ["npm:0.0.12", {
-          "packageLocation": "./.yarn/cache/next-themes-npm-0.0.12-ded224e357-a1a2621be7.zip/node_modules/next-themes/",
+        ["npm:0.0.14", {
+          "packageLocation": "./.yarn/cache/next-themes-npm-0.0.14-f225870db5-34b8933ccd.zip/node_modules/next-themes/",
           "packageDependencies": [
-            ["next-themes", "npm:0.0.12"]
+            ["next-themes", "npm:0.0.14"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.0.12", {
-          "packageLocation": "./.yarn/$$virtual/next-themes-virtual-3bfda5884e/0/cache/next-themes-npm-0.0.12-ded224e357-a1a2621be7.zip/node_modules/next-themes/",
+        ["virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.0.14", {
+          "packageLocation": "./.yarn/$$virtual/next-themes-virtual-ea40fd6a46/0/cache/next-themes-npm-0.0.14-f225870db5-34b8933ccd.zip/node_modules/next-themes/",
           "packageDependencies": [
-            ["next-themes", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.0.12"],
+            ["next-themes", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.0.14"],
             ["@types/next", null],
             ["@types/react", "npm:17.0.5"],
             ["@types/react-dom", null],
@@ -7338,7 +7331,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["portfolio", "workspace:."],
             ["@formspree/react", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:2.2.3"],
             ["@tailwindcss/jit", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.1.18"],
-            ["@types/node", "npm:14.14.44"],
+            ["@types/node", "npm:15.0.2"],
             ["@types/react", "npm:17.0.5"],
             ["@types/react-scroll", "npm:1.8.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:4.22.1"],
@@ -7350,7 +7343,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:7.23.2"],
             ["next", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:10.2.0"],
             ["next-offline", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:5.0.5"],
-            ["next-themes", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.0.12"],
+            ["next-themes", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:0.0.14"],
             ["postcss", "npm:8.2.14"],
             ["prettier", "npm:2.2.1"],
             ["prop-types", "npm:15.7.2"],
