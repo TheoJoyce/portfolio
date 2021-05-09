@@ -13,6 +13,7 @@ module.exports = {
         },
     },
     extends: [
+        'blitz',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'prettier/@typescript-eslint',

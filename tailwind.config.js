@@ -1,8 +1,13 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+// tailwind.config.js
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-    purge: ['./components/**/*.{ts,tsx}', './pages/**/*.{ts,tsx}'],
+    mode: 'jit',
+    purge: {
+        content: ['./app/**/*.{js,ts,jsx,tsx}'],
+        mode: 'all',
+        preserveHtmlElements: false,
+    },
     darkMode: 'class',
     theme: {
         colors: {
