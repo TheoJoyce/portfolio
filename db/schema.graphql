@@ -1,0 +1,10 @@
+type Work {
+    image: String!
+    title: String!
+    description: String!
+    liveLink: String!
+}
+
+type Query {
+    allWorks: [Work!]
+}
