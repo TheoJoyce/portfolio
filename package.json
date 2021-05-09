@@ -1,43 +1,33 @@
 {
-    "name": "portfolio",
-    "version": "2.0.0",
-    "description": "",
-    "main": "index.tsx",
-    "scripts": {
-        "dev": "next",
-        "build": "next build",
-        "start": "next start",
-        "prod": "npm run build && npm run start"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@formspree/react": "latest",
-        "@tailwindcss/jit": "latest",
-        "autoprefixer": "latest",
-        "next": "latest",
-        "next-offline": "latest",
-        "next-themes": "latest",
-        "postcss": "latest",
-        "react": "latest",
-        "react-dom": "latest",
-        "react-ga": "^3.3.0",
-        "react-scroll": "^1.8.2",
-        "tailwindcss": "latest"
-    },
-    "devDependencies": {
-        "@types/node": "latest",
-        "@types/react": "latest",
-        "@types/react-scroll": "^1.8.2",
-        "@typescript-eslint/eslint-plugin": "latest",
-        "@typescript-eslint/parser": "latest",
-        "eslint": "latest",
-        "eslint-config-prettier": "latest",
-        "eslint-plugin-prettier": "latest",
-        "eslint-plugin-react": "latest",
-        "prettier": "^2.2.1",
-        "prop-types": "^15.7.2",
-        "typescript": "latest"
-    }
+  "name": "portfolio-test",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "blitz dev",
+    "build": "blitz build",
+    "start": "blitz start"
+  },
+  "dependencies": {
+    "@formspree/react": "2.2.3",
+    "blitz": "0.34.3",
+    "next-themes": "0.0.14",
+    "react": "0.0.0-experimental-6a589ad71",
+    "react-dom": "0.0.0-experimental-6a589ad71",
+    "react-ga": "3.3.0",
+    "react-scroll": "1.8.2",
+    "typescript": "~4.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.5",
+    "@types/react-scroll": "1.8.2",
+    "@typescript-eslint/eslint-plugin": "4.22.1",
+    "@typescript-eslint/parser": "4.22.1",
+    "autoprefixer": "10",
+    "eslint": "7.26.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-react": "7.23.2",
+    "postcss": "8",
+    "prettier": "2.2.1",
+    "tailwindcss": "2.1.2"
+  }
 }
