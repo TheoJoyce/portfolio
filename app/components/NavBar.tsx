@@ -46,7 +46,6 @@ const NavBar = () => {
                                 width={162}
                                 height={64}
                                 alt="Theo Joyce Logo"
-                                loading="eager"
                             />
                         </div>
                     </div>
