@@ -6,4 +6,7 @@ module.exports = {
     future: {
         webpack5: true,
     },
+    experimental: {
+        reactMode: 'legacy',
+    },
 }
