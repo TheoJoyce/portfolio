@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
-import { Head, BlitzPage } from 'blitz'
+import { Head, BlitzPage, GetStaticProps } from 'blitz'
+import gqlClient from '../../db/index'
+import { gql } from 'graphql-request'
 
 import { initGA, logPageView } from '../core/utils/analytics'
 import NavBar from '../components/NavBar'
@@ -7,13 +9,15 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Work from '../components/Work'
 
+import { WorkData } from '../components/Work'
+
 declare global {
     interface Window {
         GA_INITIALIZED: boolean
     }
 }
 
-const Index: BlitzPage = () => {
+const Index = ({ portfolioCardData }: { portfolioCardData: WorkData[] }) => {
     useEffect(() => {
         if (!window.GA_INITIALIZED) {
             initGA()
@@ -41,10 +45,50 @@ const Index: BlitzPage = () => {
             </Head>
             <NavBar />
             <About />
-            <Work />
+            <Work portfolioCardData={portfolioCardData} />
             <Contact />
         </div>
     )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+    const defaultData = [
+        {
+            image: '',
+            title: 'TBD',
+            description: '',
+            liveLink: '',
+        },
+    ]
+
+    let portfolioCardData = defaultData
+
+    try {
+        const result = await gqlClient.request(
+            gql`
+                {
+                    allWorks {
+                        data {
+                            image
+                            title
+                            description
+                            liveLink
+                        }
+                    }
+                }
+            `,
+        )
+        
+        const { data }: { data: WorkData[] } = result.allWorks
+        portfolioCardData = data
+    } finally {
+        return {
+            props: {
+                portfolioCardData,
+            },
+            revalidate: 3600,
+        }
+    }
 }
 
 Index.suppressFirstRenderFlicker = true
