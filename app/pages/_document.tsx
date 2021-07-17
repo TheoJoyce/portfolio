@@ -1,3 +1,4 @@
+import React from 'react'
 import { Document, Html, DocumentHead, Main, BlitzScript } from 'blitz'
 
 class MyDocument extends Document {

@@ -1,3 +1,4 @@
+import React from 'react'
 import { FormspreeProvider } from '@formspree/react'
 import type { AppProps } from 'blitz'
 import { ThemeProvider } from 'next-themes'

@@ -1,5 +1,6 @@
+import React from 'react'
 import { useEffect } from 'react'
-import { Head, BlitzPage, GetStaticProps } from 'blitz'
+import { Head, GetStaticProps } from 'blitz'
 import gqlClient from '../../db/index'
 import { gql } from 'graphql-request'
 
@@ -78,7 +79,7 @@ export const getStaticProps: GetStaticProps = async () => {
                 }
             `,
         )
-        
+
         const { data }: { data: WorkData[] } = result.allWorks
         portfolioCardData = data
     } finally {

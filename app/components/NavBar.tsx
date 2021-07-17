@@ -1,3 +1,4 @@
+import React from 'react'
 import { Image } from 'blitz'
 import { Link, animateScroll as scroll } from 'react-scroll'
 import { useTheme } from 'next-themes'
