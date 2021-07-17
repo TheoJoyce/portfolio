@@ -20,6 +20,7 @@ const About = () => {
                                     width={256}
                                     height={256}
                                     objectFit="cover"
+                                    priority
                                 />
                             </div>
                             <h2 className="text-gray-dark dark:text-white text-4xl md:text-2xl font-bold">
