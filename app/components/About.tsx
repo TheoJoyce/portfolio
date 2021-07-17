@@ -1,3 +1,4 @@
+import React from 'react'
 import { Image } from 'blitz'
 
 import GitHub from './icons/GitHub'

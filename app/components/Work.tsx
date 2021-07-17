@@ -1,3 +1,4 @@
+import React from 'react'
 import PortfolioCard from './PortfolioCard'
 
 export interface WorkData {
