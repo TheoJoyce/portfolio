@@ -1,10 +1,8 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { Head, GetStaticProps } from 'blitz'
 import gqlClient from '../../db/index'
 import { gql } from 'graphql-request'
 
-import { initGA, logPageView } from '../core/utils/analytics'
 import NavBar from '../components/NavBar'
 import About from '../components/About'
 import Contact from '../components/Contact'
@@ -12,21 +10,7 @@ import Work from '../components/Work'
 
 import { WorkData } from '../components/Work'
 
-declare global {
-    interface Window {
-        GA_INITIALIZED: boolean
-    }
-}
-
 const Index = ({ portfolioCardData }: { portfolioCardData: WorkData[] }) => {
-    useEffect(() => {
-        if (!window.GA_INITIALIZED) {
-            initGA()
-            window.GA_INITIALIZED = true
-        }
-        logPageView()
-    }, [])
-
     return (
         <div className="bg-background dark:bg-black">
             <Head>
