@@ -11,7 +11,7 @@
     "license": "ISC",
     "dependencies": {
         "@formspree/react": "^2.2.3",
-        "blitz": "^0.39.0",
+        "blitz": "^0.45.3",
         "graphql": "^15.5.1",
         "graphql-request": "^3.4.0",
         "next-themes": "^0.0.15",
@@ -33,6 +33,6 @@
         "eslint-plugin-react": "^7.24.0",
         "postcss": "^8.3.6",
         "prettier": "^2.3.2",
-        "tailwindcss": "^2.2.15"
+        "tailwindcss": "^2.2.19"
     }
 }
